@@ -14,20 +14,20 @@
 Fill in your details where you see this icon ✍️
 We have provided a sample Day Journey entry staring at 0. You can delete this example.
 
-## [✍️ Your Name]'s Cloud Journey
+## Maciej's Cloud Journey
 
-[✍️ Introduce yourself]
+I'm cloud self learner and deeply interested in cloud topics. Because of .NET development background I mainly involve in Azure but also interested in AWS and GCP.
 
-[✍️ Tell us why you started this challenge]
+I would like to become Cloud Solution Architect because cloud topics are interesting for me and I feel passion again😊.
 
-[✍️ Tell us where you want to be at the end of the challenge]
+My goal is to work as Cloud Architect with several certificates from cloud providers to prove and check my knowledge.
 
-- [✍️ Link to your Twitter](https://twitter.com/username)
-- [✍️ Link to your LinkedIn](https://www.linkedin.com/in/username)
+- [Twitter](https://twitter.com/maciejgos)
+- [LinkedIn](https://www.linkedin.com/in/maciejgos)
 
 ## Stepping out the door
 
-- [ ] ☁️ 1 > [My First Day](Journey/001/Readme.md)
+- [ ] ☁️ 1 > [My first day of a journey #100DaysOfCloud](Journey/001/Readme.md)
 - [ ] ☁️ 2 > [](Journey/002/Readme.md)
 - [ ] ☁️ 3 > [](Journey/003/Readme.md)
 - [ ] ☁️ 4 > [](Journey/004/Readme.md)
