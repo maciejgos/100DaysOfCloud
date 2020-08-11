@@ -27,8 +27,8 @@ My goal is to work as Cloud Architect with several certificates from cloud provi
 
 ## Stepping out the door
 
-- [ ] ☁️ 1 > [My first day of a journey #100DaysOfCloud](Journey/001/Readme.md)
-- [ ] ☁️ 2 > [](Journey/002/Readme.md)
+- [x] ☁️ 1 > [My first day of a journey #100DaysOfCloud](Journey/001/Readme.md)
+- [x] ☁️ 2 > [ARM templates - Getting Started](Journey/002/Readme.md)
 - [ ] ☁️ 3 > [](Journey/003/Readme.md)
 - [ ] ☁️ 4 > [](Journey/004/Readme.md)
 - [ ] ☁️ 5 > [](Journey/005/Readme.md)
