@@ -1,52 +1,59 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+# Azure Cognitive Search - Delete detection
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+In one of my cloud native projects I have a problem with Azure Search index and old data visible in it. Goal is to remove old/removed data from index to give correct results to end users.
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+Basic understanding of [Azure Cognitive Search](https://docs.microsoft.com/en-us/azure/search/) and some data in [Table Storage](https://docs.microsoft.com/en-us/azure/storage/tables/table-storage-overview).
 
 ## Use Case
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+![Sample architecture](architecture.png)
+- In this scenario indexed data is stored in Azure Cognitive Search Index for autocomplete functionality and search in end application.
+- **Mark as deleted function** mark data as deleted and data source connection knows which data remove from index.
+- **Cleanup function** removes marked data from Table Storage.
 
 ## Cloud Research
+The goal is to remove items from index in Azure Cognitive Search service. Below are results from indexer where I'm finally able to remove 11 items from index.
+![Indexer results](indexer-results.png)
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+During this research I learn about **dataDeletionDetectionPolicy** and how indexing works with different kind of data source. I my use case I need to deal with Table Storage so guide from https://docs.microsoft.com/en-us/azure/search/search-howto-indexing-azure-tables#incremental-indexing-and-deletion-detection is helpful.
+
+Finally I add column **IsDelete** to my entities and configure data source
+![Data source configuration](datasource.png)
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
-
 ### Step 1 — Summary of Step
 
-![Screenshot](https://via.placeholder.com/500x300)
+1. Create some kind of data source (Table Storage, Cosmos DB, Blob Storage)
+2. Create Azure Cognitive Search Free Tier
+3. Add data to data source. **Remember to add column isDeleted to yours structure.**
 
-### Step 1 — Summary of Step
+### Step 2 — Summary of Step
 
-![Screenshot](https://via.placeholder.com/500x300)
+1. Setup data source in Azure Search service
+2. Setup data source structure
+3. Configure indexer
+4. Execute indexer
+5. Check number of items in index
 
 ### Step 3 — Summary of Step
 
-![Screenshot](https://via.placeholder.com/500x300)
+1. Mark some entities as deleted
+2. Execute indexer
+3. Check number of items in index
 
 ## ☁️ Cloud Outcome
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
+I learn how to better configure Azure Search service and how to remove old items from index. My client is also happy because functionality finally works as expected 😊.
 
 ## Next Steps
 
-✍️ Describe what you think you think you want to do next.
+Learn about monitoring & security. Go back to patch of AZ-303 exam.
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
-
-[link](link)
+[Twitter](link)
