@@ -1,4 +1,4 @@
-# Azure Cognitive Search - Delete detection
+# [5/100] Azure Cognitive Search - Delete detection
 
 ## Introduction
 

@@ -1,6 +1,6 @@
 <!-- This template removes the micro tutorial for a quicker post and removes images for a full template check out the 000-DAY-ARTICLE-LONG-TEMPLATE.MD-->
 
-# Authorize with Shared Key
+# [8/100] Authorize with Shared Key
 ## Introduction
 
 I one of my projects I try to set better security options for blob storage and here it comes Shared Key access. 

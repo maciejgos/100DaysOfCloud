@@ -1,6 +1,6 @@
 <!-- This is a template you can use for quick progress days. It removes a lot of the steps we encourage you to share in the longer template 000-DAY-ARTICLE-LONG-TEMPLATE.MD-->
 
-# Static Web Apps
+# [4/100] Static Web Apps
 
 ## Cloud Research
 
